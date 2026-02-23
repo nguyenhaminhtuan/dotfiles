@@ -11,7 +11,8 @@
       persistent-apps = [
         "/System/Applications/Apps.app"
         "/Applications/Safari.app"
-        "/Applications/Chrome.app"
+        "/Applications/1Password.app"
+        "/Applications/Google Chrome.app"
         "/Applications/Slack.app"
         "/Applications/TablePlus.app"
         "/Applications/OrbStack.app"
@@ -36,11 +37,14 @@
       AppleShowAllExtensions = true;
     };
 
+    controlcenter.BatteryShowPercentage = true;
+
     NSGlobalDomain = {
       ApplePressAndHoldEnabled = false;
       AppleKeyboardUIMode = 2;
 
       AppleShowAllExtensions = true;
+      AppleInterfaceStyle = null;
 
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;
@@ -48,7 +52,7 @@
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
 
-      InitialKeyRepeat = 15;
+      InitialKeyRepeat = 20;
       KeyRepeat = 2;
     };
   };

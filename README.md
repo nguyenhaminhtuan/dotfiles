@@ -8,9 +8,7 @@
 xcode-select --install
 ```
 
-2. Install Nix using Determinate Nix Installer
-
-https://docs.determinate.systems/
+2. Install Nix using Determinate Nix Installer: https://docs.determinate.systems/
 
 3. Clone repository
 

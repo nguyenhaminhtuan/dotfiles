@@ -10,16 +10,11 @@
       upgrade = true;
     };
 
-    taps = [
-      "anomalyco/tap"
-      "ariga/tap"
-    ];
-
     brews = [
       # Shell and prompts
-      "zsh"
-      "fish"
-      "starship"
+      # "zsh"
+      # "fish"
+      # "starship"
 
       #  Alternative commands
       "bat" # cat
@@ -44,15 +39,16 @@
       "atuin"
 
       # Development
-      "git"
+      # "git"
       "gh"
       "biome"
       "opencode"
       "d2"
       "atlas"
+      "nixfmt"
 
       # Management
-      "mise"
+      # "mise"
       "direnv"
       "ni"
       "uv"
@@ -77,12 +73,13 @@
       "brave-browser"
       "google-chrome"
       "firefox"
-      
+
       # Fonts
       "font-fira-code"
       "font-fira-code-nerd-font"
       "font-jetbrains-mono"
       "font-monaspace"
+      "font-monaspace-nf"
 
       # Developments
       "visual-studio-code@insiders"

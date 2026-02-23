@@ -18,6 +18,8 @@
     homebrew-bundle = { url = "github:homebrew/homebrew-bundle"; flake = false; };
     homebrew-core = { url = "github:homebrew/homebrew-core"; flake = false; };
     homebrew-cask = { url = "github:homebrew/homebrew-cask"; flake = false; };
+    anomalyco-tap = { url = "github:anomalyco/homebrew-tap"; flake = false; };
+    ariga-tap = { url = "github:ariga/homebrew-tap"; flake = false; };
   };
 
   outputs = inputs@{ nixpkgs, ... }:

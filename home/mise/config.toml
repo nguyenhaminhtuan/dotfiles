@@ -1,6 +1,6 @@
 [tools]
 usage = "latest"
-node = { version = "lts", postinstall = "corepack enable" }
+node = { version = "24", postinstall = "corepack enable" }
 bun = "latest"
 deno = "latest"
 go = "latest"

@@ -1,9 +1,20 @@
-{ self, nixpkgs, nix-darwin, home-manager, nix-homebrew
-, homebrew-core, homebrew-cask, homebrew-bundle, ... }@inputs:
+{
+  self,
+  nixpkgs,
+  nix-darwin,
+  home-manager,
+  nix-homebrew,
+  homebrew-core,
+  homebrew-cask,
+  homebrew-bundle,
+  anomalyco-tap,
+  ariga-tap,
+  ...
+}@inputs:
 
 hostId:
 let
-  user = "m2vn";
+  user = "tuannhm";
   hostConfig = import ../hosts/${hostId}.nix;
 in
 nix-darwin.lib.darwinSystem {
@@ -30,6 +41,8 @@ nix-darwin.lib.darwinSystem {
           "homebrew/homebrew-core" = homebrew-core;
           "homebrew/homebrew-cask" = homebrew-cask;
           "homebrew/homebrew-bundle" = homebrew-bundle;
+          "anomalyco/homebrew-tap" = anomalyco-tap;
+          "ariga/homebrew-tap" = ariga-tap;
         };
         mutableTaps = false;
         autoMigrate = true;

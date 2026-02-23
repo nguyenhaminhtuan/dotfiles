@@ -1,5 +1,37 @@
 {
   "nodes": {
+    "anomalyco-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1771861605,
+        "narHash": "sha256-KpJv6iLMTf17cFXk3nbp5VujrlbOx81EtMzZWHID9Q4=",
+        "owner": "anomalyco",
+        "repo": "homebrew-tap",
+        "rev": "75660b466e0869dd121fd2cd12150847618c7f25",
+        "type": "github"
+      },
+      "original": {
+        "owner": "anomalyco",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
+    "ariga-tap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1768233158,
+        "narHash": "sha256-uxciUWBtqzMmzKiY6Vw8b2/N8yFSMxee6/yt6J1WdCc=",
+        "owner": "ariga",
+        "repo": "homebrew-tap",
+        "rev": "b9434f0f13e4177ad7d0306da3cf368b174f40b6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ariga",
+        "repo": "homebrew-tap",
+        "type": "github"
+      }
+    },
     "brew-src": {
       "flake": false,
       "locked": {
@@ -141,6 +173,8 @@
     },
     "root": {
       "inputs": {
+        "anomalyco-tap": "anomalyco-tap",
+        "ariga-tap": "ariga-tap",
         "home-manager": "home-manager",
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",

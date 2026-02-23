@@ -6,6 +6,7 @@
     ./fish.nix
     ./starship.nix
     ./git.nix
+    ./mise.nix
   ];
 
   xdg.configFile = {
