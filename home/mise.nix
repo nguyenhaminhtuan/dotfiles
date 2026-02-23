@@ -5,6 +5,6 @@
     enable = true;
     enableFishIntegration = true;
     enableZshIntegration = true;
-    globalConfig = pkgs.lib.importTOML ./starship/mise.toml;
+    globalConfig = pkgs.lib.importTOML ./mise/mise.toml;
   }
 }
