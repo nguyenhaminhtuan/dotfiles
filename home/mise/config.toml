@@ -1,0 +1,13 @@
+[tools]
+usage = "latest"
+node = { version = "lts", postinstall = "corepack enable" }
+bun = "latest"
+deno = "latest"
+go = "latest"
+python = "3.13"
+terraform = "latest"
+opentofu = "latest"
+
+[settings]
+experimental = true
+idiomatic_version_file_enable_tools = ["node", "go", "python", "terraform"]

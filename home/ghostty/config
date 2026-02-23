@@ -1,0 +1,8 @@
+window-width = 110
+window-height = 30
+shell-integration = fish
+font-family = FiraCode Nerd Font
+theme = TokyoNight
+mouse-hide-while-typing = true
+
+keybind = global:cmd+shift+space=toggle_quick_terminal
