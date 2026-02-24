@@ -1,8 +1,17 @@
-window-width = 110
-window-height = 30
 shell-integration = fish
+
+window-width = 115
+window-height = 33
+
+font-size = 14
 font-family = FiraCode Nerd Font
-theme = TokyoNight
+
+theme = Gruvbox Dark
+background-opacity = 0.80
+background-blur = true
+
 mouse-hide-while-typing = true
+quick-terminal-position = "center"
+quick-terminal-size = 40%
 
 keybind = global:cmd+shift+space=toggle_quick_terminal

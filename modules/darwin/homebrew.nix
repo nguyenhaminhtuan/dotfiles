@@ -100,7 +100,7 @@
       "1password"
       "1password-cli"
       "cloudflare-warp"
-      "raycast"
+      #"raycast"
 
       # VM and tools
       "multipass"

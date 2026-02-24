@@ -6,10 +6,15 @@ let
     code = "code-insiders";
     k = "kubectl";
     tree = "eza --tree";
+    ll = "eza -l";
+    la = "eza -la";
   };
 
   abbrs = {
     dco = "docker compose";
+    ga = "git add";
+    gaa = "git add --all";
+    gc = "git commit";
   };
 in
 {
@@ -19,27 +24,11 @@ in
     enable = true;
     shellAbbrs = abbrs;
 
-    shellInit = ''
-      set -g fish_greeting
-
-      set --global --export HOMEBREW_PREFIX "/opt/homebrew";
-      set --global --export HOMEBREW_CELLAR "/opt/homebrew/Cellar";
-      set --global --export HOMEBREW_REPOSITORY "/opt/homebrew/Library/.homebrew-is-managed-by-nix";
-      fish_add_path --global --move --path "/opt/homebrew/bin" "/opt/homebrew/sbin";
-      if test -n "$MANPATH[1]"; set --global --export MANPATH \'\' $MANPATH; end;
-      if not contains "/opt/homebrew/share/info" $INFOPATH; set --global --export INFOPATH "/opt/homebrew/share/info" $INFOPATH; end;
-
-      fish_add_path $HOMEBREW_PREFIX/share/google-cloud-sdk/bin
-
-      starship init fish | source
-      # mise activate fish | source
-      direnv hook fish | source
-      zoxide init fish | source
-      fzf --fish | source
-    '';
+    shellInit = builtins.readFile ./fish/config.fish;
 
     functions = {
       tableplus = "open -a TablePlus $argv";
+      zcode = "code (zoxide query -- $argv)";
 
       # Nix helpers
       nix-switch = "sudo darwin-rebuild switch --flake ~/.config/dotfiles";
