@@ -50,7 +50,7 @@
       # Management
       # "mise"
       "direnv"
-      "ni"
+      # "ni"
       "uv"
 
       # Infra & Cloud

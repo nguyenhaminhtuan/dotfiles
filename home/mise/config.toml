@@ -7,7 +7,9 @@ go = "latest"
 python = "3.13"
 terraform = "latest"
 opentofu = "latest"
+"npm:@antfu/ni" = "latest"
 
 [settings]
 experimental = true
 idiomatic_version_file_enable_tools = ["node", "go", "python", "terraform"]
+npm.package_manager = "bun"
