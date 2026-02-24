@@ -10,6 +10,7 @@
       orientation = "bottom";
       persistent-apps = [
         "/System/Applications/Apps.app"
+        "/System/Applications/System Settings.app"
         "/Applications/Safari.app"
         "/Applications/1Password.app"
         "/Applications/Google Chrome.app"
@@ -22,7 +23,7 @@
         "/Applications/Ghostty.app"
         "/Applications/UTM.app"
       ];
-      persistent-others = [ "/System/Applications/System Settings.app" ];
+      persistent-others = [ ];
 
       # Disable hot corners
       wvous-bl-corner = 1;

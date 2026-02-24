@@ -42,9 +42,9 @@
       # "git"
       "gh"
       "biome"
-      "opencode"
+      "anomalyco/tap/opencode"
       "d2"
-      "atlas"
+      "ariga/tap/atlas"
       "nixfmt"
 
       # Management
