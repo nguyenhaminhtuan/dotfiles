@@ -10,8 +10,9 @@
       orientation = "bottom";
       persistent-apps = [
         "/System/Applications/Apps.app"
-        "/System/Applications/System Settings.app"
+        "/System/Applications/Mail.app"
         "/Applications/Safari.app"
+        "/System/Applications/System Settings.app"
         "/Applications/1Password.app"
         "/Applications/Google Chrome.app"
         "/Applications/Slack.app"
@@ -19,6 +20,7 @@
         "/Applications/OrbStack.app"
         "/Applications/Yaak.app"
         "/Applications/Obsidian.app"
+        "/Applications/Figma.app"
         "/Applications/Visual Studio Code - Insiders.app"
         "/Applications/Ghostty.app"
         "/Applications/UTM.app"
@@ -43,9 +45,9 @@
     NSGlobalDomain = {
       ApplePressAndHoldEnabled = false;
       AppleKeyboardUIMode = 2;
-
       AppleShowAllExtensions = true;
       AppleInterfaceStyle = null;
+      AppleICUForce24HourTime = true;
 
       NSAutomaticCapitalizationEnabled = false;
       NSAutomaticPeriodSubstitutionEnabled = false;

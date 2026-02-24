@@ -78,6 +78,7 @@
       "font-fira-code"
       "font-fira-code-nerd-font"
       "font-jetbrains-mono"
+      "font-jetbrains-mono-nerd-font"
       "font-monaspace"
       "font-monaspace-nf"
 
@@ -99,7 +100,6 @@
       "1password"
       "1password-cli"
       "cloudflare-warp"
-      "cleanshot"
       "raycast"
 
       # VM and tools

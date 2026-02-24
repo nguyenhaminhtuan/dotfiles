@@ -29,6 +29,8 @@ in
       if test -n "$MANPATH[1]"; set --global --export MANPATH \'\' $MANPATH; end;
       if not contains "/opt/homebrew/share/info" $INFOPATH; set --global --export INFOPATH "/opt/homebrew/share/info" $INFOPATH; end;
 
+      fish_add_path $HOMEBREW_PREFIX/share/google-cloud-sdk/bin
+
       starship init fish | source
       # mise activate fish | source
       direnv hook fish | source
