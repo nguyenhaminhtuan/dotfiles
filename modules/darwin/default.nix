@@ -19,7 +19,7 @@
   nixpkgs.config.allowUnfree = true;
 
   system.primaryUser = user;
-  system.stateVersion = 1;
+  system.stateVersion = 6;
   system.configurationRevision = self.rev or self.dirtyRev or null;
 
   environment.systemPackages = [ pkgs.vim ];
