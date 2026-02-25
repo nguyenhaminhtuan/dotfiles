@@ -4,18 +4,17 @@
   system.defaults = {
     dock = {
       tilesize = 32;
-      autohide = false;
+      autohide = true;
       show-recents = false;
       show-process-indicators = true;
       orientation = "bottom";
       persistent-apps = [
-        "/System/Applications/Apps.app"
         "/System/Applications/Mail.app"
         "/Applications/Safari.app"
-        "/System/Applications/System Settings.app"
         "/Applications/1Password.app"
+        "/Users/${user}/Applications/Chrome Apps.localized/YouTube Music.app"
         "/Applications/Google Chrome.app"
-        "/Applications/Slack.app"
+        "/Applications/Claude.app"
         "/Applications/TablePlus.app"
         "/Applications/OrbStack.app"
         "/Applications/Yaak.app"
@@ -40,7 +39,7 @@
       AppleShowAllExtensions = true;
     };
 
-    controlcenter.BatteryShowPercentage = true;
+    controlcenter.BatteryShowPercentage = false;
 
     NSGlobalDomain = {
       ApplePressAndHoldEnabled = false;

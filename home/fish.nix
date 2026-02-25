@@ -15,6 +15,11 @@ let
     ga = "git add";
     gaa = "git add --all";
     gc = "git commit";
+    gcm = "git commit -m";
+    gca = "git commit --ammend";
+    gs = "git status";
+    gd = "git diff";
+    gco = "git checkout";
   };
 in
 {
