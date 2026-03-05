@@ -8,6 +8,7 @@
       show-recents = false;
       show-process-indicators = true;
       orientation = "bottom";
+      mru-spaces = false;
       persistent-apps = [
         "/System/Applications/Mail.app"
         "/Applications/Safari.app"
@@ -54,7 +55,7 @@
       NSAutomaticDashSubstitutionEnabled = false;
       NSAutomaticSpellingCorrectionEnabled = false;
 
-      InitialKeyRepeat = 20;
+      InitialKeyRepeat = 15;
       KeyRepeat = 2;
     };
   };

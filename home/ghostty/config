@@ -10,8 +10,11 @@ theme = Gruvbox Dark
 background-opacity = 0.80
 background-blur = true
 
-mouse-hide-while-typing = true
 quick-terminal-position = "center"
 quick-terminal-size = 40%
+
+mouse-hide-while-typing = true
+
+macos-non-native-fullscreen = visible-menu
 
 keybind = global:cmd+shift+space=toggle_quick_terminal
