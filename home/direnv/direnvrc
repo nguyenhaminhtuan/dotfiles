@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if test -d "$PWD/node_modules/.bin"; then
+    export PATH=$PWD/node_modules/.bin:$PATH
+fi

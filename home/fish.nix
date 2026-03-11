@@ -2,7 +2,6 @@
 
 let
   aliases = {
-    cat = "bat";
     code = "code-insiders";
     k = "kubectl";
     tree = "eza --tree";
@@ -29,7 +28,7 @@ in
     enable = true;
     shellAbbrs = abbrs;
 
-    shellInit = builtins.readFile ./fish/config.fish;
+    interactiveShellInit = builtins.readFile ./fish/config.fish;
 
     functions = {
       tableplus = "open -a TablePlus $argv";

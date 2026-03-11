@@ -9,6 +9,8 @@ if test -d "/opt/homebrew"
     set -q INFOPATH; or set INFOPATH ''; set -gx INFOPATH "/opt/homebrew/share/info" $INFOPATH;
 end
 
+set -q PATH; or set PATH ''; set -gx PATH  "$HOME/.local/bin" $PATH;
+
 fish_add_path $HOMEBREW_PREFIX/share/google-cloud-sdk/bin
 
 if set -q GHOSTTY_RESOURCES_DIR
