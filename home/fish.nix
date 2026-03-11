@@ -15,10 +15,13 @@ let
     gaa = "git add --all";
     gc = "git commit";
     gcm = "git commit -m";
-    gca = "git commit --ammend";
+    gca = "git commit --amend --no-edit";
+    gcma = "git commit --amend -m";
     gs = "git status";
     gd = "git diff";
+    gl = "git log";
     gco = "git checkout";
+    gp = "git push";
   };
 in
 {
